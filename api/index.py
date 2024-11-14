@@ -45,6 +45,10 @@ class Link(db.Model):
 def load_user(user_id):
     return db.session.get(User, int(user_id))
 
+@app.route('/', methods=['GET'])
+def index():
+    return "This is the API subdomain. Use postman to test the other endpoints"
+
 # API Routes
 @app.route('/api/register', methods=['POST'])
 def api_register():
