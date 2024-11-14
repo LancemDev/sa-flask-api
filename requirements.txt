@@ -4,4 +4,4 @@ Flask-Login
 Werkzeug
 shortuuid
 python-dotenv
-psycopg2
+psycopg2-binary
